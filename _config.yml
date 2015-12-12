@@ -9,6 +9,7 @@
 title: Portfolio
 email: adrienne.mcd.21@gmail.com
 description: A portfolio of web development projects
+baseurl: '/portfolio'
 url: "http://adriennemcd.com" # the base hostname & protocol for your site
 twitter_username: adrienne_mcd
 github_username:  adriennemcd
