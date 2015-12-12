@@ -18,7 +18,7 @@ function checkSize(){
 
 // Toggle menu in mobile site
 $('.menu-icon').click(function(){
-	$('.trigger').toggle();
+	$('.trigger').slideToggle();
 	$('.menu-icon').css('width', '100%');
 });
 

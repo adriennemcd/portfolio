@@ -4,18 +4,24 @@
 .site-header {
     min-height: 56px;
     width: 200px;
-    float: left;
-
-    // Positioning context for the mobile navigation icon
-    //position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    border-right: 3px solid $grey-color-light;
 
     @include media-query($on-laptop) {
         width: 100%;
+        border-right: 0px;
+        float: left;
+        position: relative;
     }
 }
 
 .site-header .wrapper {
     padding-top: $spacing-unit;
+
+    @include media-query($on-laptop) {
+    }
 }
 
 .logo {
@@ -127,7 +133,17 @@
             margin-left: 20px;
         }
     }
+}
 
+.footHead {
+    display: block;
+
+    @include media-query($on-laptop) {
+        display: none;
+    }
+    @include media-query($on-palm) {
+        display: none;
+    }
 }
 
 /**
@@ -135,41 +151,48 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    @extend %clearfix;
-    max-width: 645px;
+    float: left;
     margin: 0 auto;
+    width: 100%;
+    display: none;
 }
 
 .footer-col {
     float: left;
     width: 100%;
     margin-bottom: $spacing-unit / 2;
+    font-size: 15px;
+    color: $grey-color;
+    text-align: center;
 }
 
 .footer-col-1,
 .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-1 {
-    text-align: right;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
 }
 
 .fa {
-    padding-right: calc(#{$spacing-unit} / 1.3);
+    padding-right: calc(#{$spacing-unit} / 2);
+    padding-bottom: calc(#{$spacing-unit} / 1.2);
+    font-size: 1.82em;
+
+    @include media-query($on-laptop) {
+        font-size: 3em;
+    }
 }
 
 @include media-query($on-laptop) {
-
+    .site-footer {
+        display: block;
+    }
 } // controls for screen size widths in between palm and laptop
 
 @include media-query($on-palm) {
+    .site-footer {
+        display: block;
+    }
+
     .footer-col {
         float: none;
         width: 100%;
@@ -190,11 +213,17 @@
     padding: $spacing-unit 0;
     width: calc(100% - 200px);
     float: left;
+    margin-left: 200px;
 
     @include media-query($on-laptop) {
         padding: 0px;
         width: 100%;
+        margin-left: 0px;
     }
+}
+
+.basicPage {
+    max-width: 800px;
 }
 
 .page-heading {

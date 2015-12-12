@@ -5,6 +5,7 @@ date:   2014-12-17 11:38:16 -0500
 categories: [analysis,webdev]
 image: neighborhoodChange.png
 descrip: "Python-based tools for ArcGIS to automate the analysis of neighborhood change"
+link: https://github.com/adriennemcd/neighborhood-change-index
 ---
 For this project, I developed a set of Python-based tools for ArcGIS to automate the analysis of neighborhood change over time.<!--more-->  This toolkit was inspired by a method of analysis described in Alan Mallach’s 2008 report Managing Neighborhood Change: A Framework for Sustainable and Equitable Revitalization.
 
