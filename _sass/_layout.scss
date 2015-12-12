@@ -31,6 +31,7 @@
 
 .greeting {
     width: 100%;
+    padding-top: $spacing-unit;
 
     > h3 {
         line-height: $base-line-height;
@@ -41,6 +42,7 @@
         float: left;
         max-width: 67%;
         padding-left: 10px;  
+        padding-top: 0px;
     }
 }
 
@@ -56,7 +58,11 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-        padding: 5px 0px;
+        padding: 15px 0px;
+    }
+
+    .trigger {
+        display: block;
     }
 
     hr {
