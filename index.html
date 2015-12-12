@@ -5,7 +5,7 @@ layout: default
 <div class="catbloc" id="allposts">
   {% for post in site.posts %}
     <div class="posted">
-      <a class="post-link" href="{{ post.link }}" target="_blank"><img src="{{ site.baseurl }}/assets/img/{{ post.image }}" class="postImg"></a>
+      <a class="post-link" href="{{ post.link }}" target="_blank"><img src="/assets/img/{{ post.image }}" class="postImg"></a>
       <div class="descrip">
         <h4>
           {{ post.title }}
@@ -19,4 +19,4 @@ layout: default
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
-<script src="{{ site.baseurl }}/js/index.js"></script>
+<script src="/js/index.js"></script>

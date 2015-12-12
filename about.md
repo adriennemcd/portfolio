@@ -12,5 +12,5 @@ This site is was designed and built mobile-first using Jekyll, Sass, and jQuery.
  
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="{{ site.baseurl }}/js/index.js"></script>
+<script src="/js/index.js"></script>
 
