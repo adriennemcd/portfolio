@@ -23,7 +23,12 @@ $('.menu-icon').click(function(){
 });
 
 // Add masonry
-$('.catbloc').masonry({
+var $grid = $('.catbloc').masonry({
   'itemSelector': '.posted',
   'transitionDuration': '1.0s'
+});
+
+// Refresh masonry when images are loaded
+$('.catbloc').imagesLoaded( function() {
+  $grid.masonry('layout');
 });
