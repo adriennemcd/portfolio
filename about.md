@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="basicPage">
-Hello!  I'm Adrienne McDonnell.  I have a background in geospatial analysis, and am currently seeking opportunities in front end web development.  My transition to programming began as a desire to make GIS analysis more accessible and interactive via web mapping, and my enthusiasm for web development has grown ever since.
+Hello!  I'm Adrienne McDonnell.  I have a background in geospatial analysis and am currently seeking opportunities in front end web development.  My transition to programming began as a desire to make GIS analysis more accessible and interactive via web mapping, and my enthusiasm for web development has grown ever since.
 <br /><br />
 This site was designed and built mobile-first using Jekyll, Sass, and jQuery.
 </div>
