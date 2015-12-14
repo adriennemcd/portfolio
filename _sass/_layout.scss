@@ -25,13 +25,16 @@
 }
 
 .logo {
-    width: 100%;
-    max-width: 150px;
+    width: 150px;
 
     @include media-query($on-laptop) {
         width: 33%;
         max-width: 150px;
         float: left;
+
+        > svg {
+            width: 100%;
+        }
     }
 }
 
