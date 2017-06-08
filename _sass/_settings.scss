@@ -1,0 +1,32 @@
+// MEDIA QUERIES
+$content-width:    100%;
+$post-width:     calc(100% - 20px);
+
+$small:  320px;
+$medium:  768px;
+$large: 1025px;
+$on-palm:          500px;
+$on-laptop:        950px;
+
+
+// EXTENDS and MIXINS
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// VARIABLES
+// fonts
+
+
+// spacing
