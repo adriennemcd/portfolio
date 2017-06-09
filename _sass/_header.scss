@@ -2,16 +2,30 @@
   padding: 20px 0;
 
   .inner-container {
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
   }
 
   &__logo {
-    flex: 1 0 50%;
-    display: block;
+    //flex: 1 0 50%;
+    display: table;
+    margin: 0 auto;
 
     img {
       width: 100px;
+    }
+
+    /* Fix for IE to respect aspect ratios and sizes for img tags containing SVG files */
+    /* IE9 */
+    .ie9 img[src*=".svg"] {
+      width: 100%; 
+    }
+
+    /* IE10+ */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      img[src*=".svg"] {
+        width: 100%; 
+      }
     }
   }
 }

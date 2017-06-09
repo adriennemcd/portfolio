@@ -1,3 +1,8 @@
+// set universal box sizing
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 /**
  * Reset some basic elements
  */
@@ -94,9 +99,12 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
     color: $grey-color-dark;
-    font-family: 'Oxygen', sans-serif;
+    //font-family: 'Oxygen', sans-serif;
+    //font-family: $font-montserrat;
+    font-family: $font-abeezee;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 

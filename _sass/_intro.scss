@@ -1,0 +1,38 @@
+.intro {
+  margin-bottom: 40px;
+  border-bottom: 3px solid #00a89e;
+
+  &__title-container {
+    background: $theme-blue;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 36px 0 15px 115px;
+    color: white;
+    font-size: rem(28);
+    line-height: 1.2;
+
+    &:before {
+      content: 'hi';
+      position: absolute;
+      top: rem(12);
+      left: rem(15);
+      color: white;
+      font-family: $font-lobster;
+      font-size: rem(112);
+      line-height: 0.79;
+      text-transform: none;
+    }
+  }
+
+  &__subtitle {
+    margin: 14px 0 0;
+    color: $theme-blue;
+    font-size: rem(25);
+    line-height: 1;
+    text-align: center;
+  }
+}

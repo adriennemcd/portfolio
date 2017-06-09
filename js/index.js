@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
     // run test on page load and window resize
-    checkSize();
-    $(window).resize(checkSize);
+    //checkSize();
+    //$(window).resize(checkSize);
 });
 
 //Check whether the window is tablet or mobile based on nav icon visibility
@@ -17,18 +17,18 @@ function checkSize(){
 }
 
 // Toggle menu in mobile site
-$('.menu-icon').click(function(){
+$('.nav__icon').click(function(){
 	$('.trigger').slideToggle();
 	$('.menu-icon').css('width', '100%');
 });
 
 // Add masonry
-var $grid = $('.catbloc').masonry({
-  'itemSelector': '.posted',
-  'transitionDuration': '1.0s'
-});
+// var $grid = $('.catbloc').masonry({
+//   'itemSelector': '.posted',
+//   'transitionDuration': '1.0s'
+// });
 
-// Refresh masonry when images are loaded
-$('.catbloc').imagesLoaded( function() {
-  $grid.masonry('layout');
-});
+// // Refresh masonry when images are loaded
+// $('.catbloc').imagesLoaded( function() {
+//   $grid.masonry('layout');
+// });
