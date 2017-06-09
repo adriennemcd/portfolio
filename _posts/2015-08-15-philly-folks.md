@@ -2,7 +2,7 @@
 layout: post
 title:  "Philly Folks"
 date:   2015-08-15 11:38:16 -0500
-categories: webdev
+categories: personal
 image: phillyfolks.png
 descrip: "Ruby on Rails & Google Maps API application"
 link: https://phillyfolks.herokuapp.com 

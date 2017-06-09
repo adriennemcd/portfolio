@@ -2,7 +2,7 @@
 layout: post
 title:  "Neighborhood Shift: Flexible Indexing for Neighborhood Change Analysis"
 date:   2014-12-17 11:38:16 -0500
-categories: [analysis,webdev]
+categories: [personal]
 image: neighborhoodChange.png
 descrip: "Python-based tools for ArcGIS to automate the analysis of neighborhood change"
 link: https://github.com/adriennemcd/neighborhood-change-index

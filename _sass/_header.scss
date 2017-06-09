@@ -1,13 +1,8 @@
 .header {
-  padding: 20px 0;
-
-  .inner-container {
-    //display: flex;
-    //align-items: center;
-  }
+  padding: 10px 0;
+  border-top: 10px solid #00a89e;
 
   &__logo {
-    //flex: 1 0 50%;
     display: table;
     margin: 0 auto;
 

@@ -1,3 +1,22 @@
 .posts {
-  padding: 0 20px;
+  &__title {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color: white;
+    background: $theme-gray;
+  }
+
+  &__item {
+    margin: 0 20px 20px;
+    border: 8px solid $theme-gray-lt;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+
+    &-descrip {
+      padding: 10px;
+      border-top: 8px solid $theme-gray-lt;
+    }
+  }
 }
