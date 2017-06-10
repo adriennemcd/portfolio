@@ -14,11 +14,13 @@ layout: default
       <a class="posts__item" href="{{ post.link }}" target="_blank">
         <img src="/assets/img/{{ post.image }}" class="postImg">
         <div class="posts__item-details">
-          <h4 class="posts__item-title">
-            {{ post.title }}
-          </h4>
-          <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
-          <p class="posts__item-descrip">{{ post.descrip }}</p>
+          <div class="posts__item-details-inner">
+            <h4 class="posts__item-title">
+              {{ post.title }}
+            </h4>
+            <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
+            <p class="posts__item-descrip">{{ post.descrip }}</p>
+          </div>
         </div>
       </a>
     {% endfor %}
@@ -29,11 +31,13 @@ layout: default
         <a class="posts__item" href="{{ post.link }}" target="_blank">
           <img src="/assets/img/{{ post.image }}" class="postImg">
           <div class="posts__item-details">
-            <h4 class="posts__item-title">
-              {{ post.title }}
-            </h4>
-            <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
-            <p class="posts__item-descrip">{{ post.descrip }}</p>
+            <div class="posts__item-details-inner">
+              <h4 class="posts__item-title">
+                {{ post.title }}
+              </h4>
+              <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
+              <p class="posts__item-descrip">{{ post.descrip }}</p>
+            </div>
           </div>
         </a>
     {% endfor %}
