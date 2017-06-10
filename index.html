@@ -11,8 +11,8 @@ layout: default
   <div class="posts--professional">
     <h3 class="posts__title">Professional work</h3>
     {% for post in site.categories['professional'] %}
-      <div class="posts__item">
-        <a class="posts__item-link" href="{{ post.link }}" target="_blank"><img src="/assets/img/{{ post.image }}" class="postImg"></a>
+      <a class="posts__item" href="{{ post.link }}" target="_blank">
+        <img src="/assets/img/{{ post.image }}" class="postImg">
         <div class="posts__item-details">
           <h4 class="posts__item-title">
             {{ post.title }}
@@ -20,22 +20,22 @@ layout: default
           <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
           <p class="posts__item-descrip">{{ post.descrip }}</p>
         </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
   <div class="posts--personal">
     <h3 class="posts__title">Personal work</h3>
     {% for post in site.categories['personal'] %}
-      <div class="posts__item">
-        <a class="posts__item-link" href="{{ post.link }}" target="_blank"><img src="/assets/img/{{ post.image }}" class="postImg"></a>
-        <div class="posts__item-details">
-          <h4 class="posts__item-title">
-            {{ post.title }}
-          </h4>
-          <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
-          <p class="posts__item-descrip">{{ post.descrip }}</p>
-        </div>
-      </div>
+        <a class="posts__item" href="{{ post.link }}" target="_blank">
+          <img src="/assets/img/{{ post.image }}" class="postImg">
+          <div class="posts__item-details">
+            <h4 class="posts__item-title">
+              {{ post.title }}
+            </h4>
+            <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
+            <p class="posts__item-descrip">{{ post.descrip }}</p>
+          </div>
+        </a>
     {% endfor %}
   </div>
 </div>

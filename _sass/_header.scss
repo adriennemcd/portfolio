@@ -40,3 +40,13 @@
     }
   }
 }
+
+@include breakpoint($large) {
+  .header {
+    &__logo {
+      img {
+        width: 130px;
+      }
+    }
+  }
+}

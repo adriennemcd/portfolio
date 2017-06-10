@@ -1,4 +1,10 @@
+.main-container {
+  background: $theme-gray-lt;
+}
+
 .inner-container {
   @extend %clearfix;
+  max-width: $content-width;
+  margin: 0 auto;
   padding: 0 20px;
 }
