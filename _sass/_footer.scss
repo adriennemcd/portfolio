@@ -1,0 +1,18 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+
+  &__icons {
+    &-item {
+      margin-right: 15px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      .fa {
+        font-size: rem(35);
+      }
+    }
+  }
+}

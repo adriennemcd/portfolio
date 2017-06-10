@@ -1,4 +1,9 @@
 .posts {
+  &--professional, &--personal {
+    padding-bottom: 60px;
+    background: $theme-gray;
+  }
+
   &__title {
     margin-bottom: 20px;
     padding: 5px 20px;
@@ -11,12 +16,29 @@
     border: 8px solid $theme-gray-lt;
 
     &:last-child {
-      margin-bottom: 40px;
+      margin-bottom: 0px;
+    }
+
+    &-details {
+      padding: 20px;
+      border-top: 8px solid $theme-gray-lt;
+      background: white;
+    }
+
+    &-title {
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    &-date {
+      margin-top: 3px;
+      font-size: rem(14);
+      line-height: 1;
     }
 
     &-descrip {
-      padding: 10px;
-      border-top: 8px solid $theme-gray-lt;
+      margin: 0;
+      line-height: 1.4;
     }
   }
 }
