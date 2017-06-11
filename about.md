@@ -22,7 +22,7 @@ permalink: /about/
   <div class="page__section">
     <h2 class="page__section-title">Volunteering &amp; Hobbies</h2>
     <p>I am committed to giving back to the community that helped me get my start in the tech world. I volunteer as a teacher's assistant for Girl Develop It Philly, and enjoy speaking and writing about being a woman in tech and a career changer. I also love talking with other women who are making the transition into tech.  Please reach out if you want to talk!</p>
-    <p>When I'm not coding, I pursue other creative outlets like weaving, jewelry making, and painting.  If only there were more hours in a day :) 
+    <p>When I'm not coding, I pursue other creative outlets like weaving, jewelry making, and painting.  If only there were more hours in a day :)</p> 
   </div>
 </div>
  
