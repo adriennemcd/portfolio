@@ -1,14 +1,46 @@
 ---
 layout: page
-title: Writing // Speaking
+title: writing // speaking
 permalink: /writing-speaking/
 ---
 
-<div class="basicPage">
-  <p>Hello!  I'm Adrienne McDonnell and I'm a front end web developer based in Philadelphia.</p>
-  <p>I'm a self-motivated and inquisitive individual and approach challenges with creativity and rigorous attention to detail. I have a keen eye for design and a love for logical problem-solving. I'm happiest when contributing to a hardworking team that encourages thoughtful collaboration and continual learning.</p>
-  <p>I have an academic background in geospatial analysis, but have been exploring web design and web development since the days of scrolling banners and fancy rainbow text (Neopets shop theming anyone?).  My transition to programming began as a desire to make GIS analysis more accessible and interactive via web mapping, and my enthusiasm for web development has grown ever since.</p>
-  <p>This site was designed and built mobile-first using Jekyll, Sass, and jQuery.</p>
+<div class="page--communicate">
+  <img class="page__img page__img--writing" src="/assets/img/writing.jpg">
+  <div class="page__section">
+    <h2 class="page__section-title">Writing</h2>
+    <p>I enjoy writing about front end technology and how to transition to the field as a career changer. Check back here for more or follow me on <a href="https://medium.com/@adriennemcd" target="_blank">Medium!</a></p>
+    <div class="page__blog">
+    {% for post in site.categories['blog'] %}
+        <div class="page__blog-item">
+          <h4 class="page__blog-item-title">
+            <a class="page__blog-item-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+          </h4>
+
+          <p class="page__blog-item-date">{{ post.date | date: "%B %Y" }} - {{ post.source }}</p>
+          <p class="page__blog-item-descrip">{{ post.descrip }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="page__section">
+    <h2 class="page__section-title">Speaking</h2>
+    <p>I've had the wonderful opportunity to speak on a handful of panels about being a woman in tech and a career changer. It is a joy to talk to people who are just entering the field.</p>
+    <div class="page__event">
+    {% for post in site.categories['speak'] %}
+        <div class="page__event-item">
+          <h4 class="page__event-item-title">
+            {% if post.link == 'blank' %}
+              {{ post.title }}
+            {% else %}
+              <a class="page__event-item-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+            {% endif %}
+          </h4>
+          <p class="page__event-item-date">{{ post.date | date: "%d %b %Y, %I:%M %p" }}</p>
+          <p class="page__event-item-date">{{ post.location }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
  
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

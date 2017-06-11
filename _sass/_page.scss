@@ -1,0 +1,115 @@
+.page {
+  &__header {
+    padding: 20px 20px 30px;
+    background: $theme-blue;
+
+    &-title {
+      margin: 0;
+      color: white;
+      font-family: $font-lobster;
+      font-size: rem(35);
+      font-weight: 100;
+      line-height: 1;
+      text-transform: none;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    @include clearfix;
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid $theme-gray;
+
+    &--amcd, &--writing {
+      display: block;
+      max-width: 250px;
+      margin: 7px auto 20px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 40px;
+
+    &-title {
+      line-height: 1;
+    }
+  }
+
+  &__blog, &__event {
+    &-item {
+      margin: 20px 0 25px;
+      padding-left: 10px;
+      border-left: 2px solid $theme-yellow;
+
+      &-title {
+        margin-bottom: 0;
+      }
+
+      &-date {
+        margin-top: 3px;
+        font-size: rem(14);
+        line-height: 1;
+      }
+
+      &-descrip {
+        margin: 0;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@include breakpoint($medium) {
+  .page {
+    $block: &;
+
+    &__header {
+      &-title {
+        font-size: rem(55);
+      }
+    }
+
+    &__content {
+      padding: 50px;
+    }
+
+    &__img {
+      &--amcd, &--writing {
+        float: left;
+        max-width: 200px;
+        margin: 0 30px 10px 0;
+      }
+    }
+
+    &__section {
+      padding-left: 230px;
+    }
+  }
+}
+
+@include breakpoint($large) {
+  .page {
+    &__header {
+      &-title {
+        font-size: rem(65);
+      }
+    }
+
+    &__img {
+      &--amcd, &--writing {
+        max-width: 250px;
+      }
+    }
+
+    &__section {
+      padding-left: 280px;
+    }
+  }
+}
