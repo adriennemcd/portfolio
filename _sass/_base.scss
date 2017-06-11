@@ -11,6 +11,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -99,11 +100,9 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
     color: $grey-color-dark;
-    //font-family: 'Oxygen', sans-serif;
-    //font-family: $font-montserrat;
     font-family: $font-abeezee;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 

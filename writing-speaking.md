@@ -35,7 +35,7 @@ permalink: /writing-speaking/
               <a class="page__event-item-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
             {% endif %}
           </h4>
-          <p class="page__event-item-date">{{ post.date | date: "%d %b %Y, %I:%M %p" }}</p>
+          <p class="page__event-item-date">{{ post.date | date: "%B %Y" }}</p>
           <p class="page__event-item-date">{{ post.location }}</p>
         </div>
       {% endfor %}

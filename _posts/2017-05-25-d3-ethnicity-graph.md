@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "d3 Ethnicity Graph"
-date:   2015-11-18 11:38:16 -0500
+date:   2017-05-25 11:38:16 -0500
 categories: personal
 image: d3bargraph.png
 descrip: "A d3.js bar graph module to explore Philly neighborhood race/ethnicity"

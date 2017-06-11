@@ -1,5 +1,5 @@
 //COLORS
-$text-color:       #758988;
+//$text-color:       #758988;
 $background-color: #fdfdfd;
 $brand-color:      #00a89e;
 
@@ -13,8 +13,11 @@ $amcd-blue: #00a89e;
 $amcd-gray: rgba(117, 137, 136, 0.6);
 $amcd-gray-lt: #e3e7e7;
 
+$sirocco: #647574;
+
 // VARIABLES
 $theme-yellow: $amcd-yellow;
 $theme-blue: $amcd-blue;
 $theme-gray: $amcd-gray;
 $theme-gray-lt: $amcd-gray-lt;
+$text-color: $sirocco;
