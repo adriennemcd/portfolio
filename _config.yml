@@ -9,7 +9,7 @@
 title: Portfolio
 email: adrienne.mcd.21@gmail.com
 description: A portfolio of web development projects
-url: "http://adriennemcd.com" # the base hostname & protocol for your site
+baseurl: "" # the base hostname & protocol for your site http://adriennemcd.com
 twitter_username: adrienne_mcd
 github_username:  adriennemcd
 
@@ -17,3 +17,5 @@ github_username:  adriennemcd
 markdown: kramdown
 permalink: /:title
 excerpt_separator: <!--more-->
+gems:
+  - octopress-autoprefixer

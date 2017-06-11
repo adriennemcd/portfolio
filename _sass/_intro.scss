@@ -1,0 +1,76 @@
+.intro {
+  position: relative;
+
+  &__title-container {
+    height: 190px;
+    background: $theme-blue;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 44px 0 15px 115px;
+    color: white;
+    font-size: rem(28);
+    line-height: 1.2;
+
+    &:before {
+      content: 'hi';
+      position: absolute;
+      top: rem(20);
+      left: rem(15);
+      color: white;
+      font-family: $font-lobster;
+      font-size: rem(112);
+      font-weight: 100;
+      line-height: 0.79;
+      text-transform: none;
+    }
+  }
+
+  &__subtitle {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    margin: 0;
+    padding: 0 20px;
+    color: white;
+    font-family: $font-lobster;
+    font-size: rem(35);
+    font-weight: 100;
+    line-height: 1;
+    text-align: center;
+    text-transform: none;
+  }
+}
+
+@include breakpoint($medium) {
+  .intro {
+
+    &__title-container {
+      height: rem(260);
+    }
+
+    &__title {
+      max-width: rem(400);
+      padding: 58px 0 15px 135px;
+      font-size: rem(38);
+
+      &:before {
+        top: 30px;
+        font-size: rem(140);
+      }
+    }
+
+    &__subtitle {
+      bottom: 45px;
+      font-size: rem(48);
+    }
+  }
+}
+
+
+
+

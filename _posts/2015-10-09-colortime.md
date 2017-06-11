@@ -2,7 +2,7 @@
 layout: post
 title:  "Colortime!"
 date:   2015-10-09 11:38:16 -0500
-categories: webdev
+categories: personal
 image: colortime.png
 descrip: "An app for color story exploration"
 link: http://adriennemcd.github.io/colortime/ 

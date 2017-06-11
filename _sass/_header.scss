@@ -1,0 +1,52 @@
+.header {
+  padding: 10px 0;
+  border-top: 10px solid #00a89e;
+
+  &__logo {
+    display: table;
+    margin: 0 auto;
+
+    img {
+      width: 100px;
+    }
+
+    /* Fix for IE to respect aspect ratios and sizes for img tags containing SVG files */
+    /* IE9 */
+    .ie9 img[src*=".svg"] {
+      width: 100%; 
+    }
+
+    /* IE10+ */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      img[src*=".svg"] {
+        width: 100%; 
+      }
+    }
+  }
+}
+
+@include breakpoint($medium) {
+  .header {
+    .inner-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      display: block;
+      margin: 0;
+      flex: 1 0 50%;
+    }
+  }
+}
+
+@include breakpoint($large) {
+  .header {
+    &__logo {
+      img {
+        width: 130px;
+      }
+    }
+  }
+}

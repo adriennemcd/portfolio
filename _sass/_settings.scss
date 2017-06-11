@@ -1,0 +1,58 @@
+// MEDIA QUERIES
+$content-width:    1200px;
+// $post-width:     calc(100% - 20px);
+
+$small:  320px;
+$medium:  768px;
+$large: 1025px;
+// $on-palm:          500px;
+// $on-laptop:        950px;
+
+
+// EXTENDS and MIXINS
+@mixin breakpoint($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//from bourbon
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+$em-base: 16;
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $em-base;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// VARIABLES
+// fonts
+$font-lobster: 'Lobster', cursive;
+$font-abeezee: 'ABeeZee', sans-serif;
+
+// spacing

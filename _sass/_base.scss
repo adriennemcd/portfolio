@@ -1,3 +1,8 @@
+// set universal box sizing
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 /**
  * Reset some basic elements
  */
@@ -6,6 +11,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -94,9 +100,10 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
     color: $grey-color-dark;
-    font-family: 'Oxygen', sans-serif;
+    font-family: $font-abeezee;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 
@@ -107,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    transition: color ease-in-out .2s;
 
     &:visited {
         // color: darken($brand-color, 15%);
@@ -169,37 +177,10 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: $content-width;
     margin: 0px;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
 }
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
 
 /**
  * Icons

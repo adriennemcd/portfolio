@@ -1,0 +1,26 @@
+.body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  // wraps header and main container for flex sticky footer func
+  flex: 1 0 auto;
+
+  // also need nested divs to expand full height
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1 0 auto;
+  background: $theme-gray-lt;
+}
+
+.inner-container {
+  @extend %clearfix;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}

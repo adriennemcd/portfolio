@@ -1,0 +1,23 @@
+//COLORS
+//$text-color:       #758988;
+$background-color: #fdfdfd;
+$brand-color:      #00a89e;
+
+$grey-color:       #758988;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+//NEW
+$amcd-yellow: #ffcf2c;
+$amcd-blue: #00a89e;
+$amcd-gray: rgba(117, 137, 136, 0.6);
+$amcd-gray-lt: #e3e7e7;
+
+$sirocco: #647574;
+
+// VARIABLES
+$theme-yellow: $amcd-yellow;
+$theme-blue: $amcd-blue;
+$theme-gray: $amcd-gray;
+$theme-gray-lt: $amcd-gray-lt;
+$text-color: $sirocco;
