@@ -2,44 +2,52 @@
 layout: default
 ---
 <div class="intro">
-    <div class="intro__title-container">
-      <h1 class="intro__title">I'm Adrienne McDonnell</h1>
-    </div>
-    <h2 class="intro__subtitle">front end developer</h2>
+  <div class="intro__title-container">
+    <h1 class="intro__title">I'm Adrienne McDonnell</h1>
+  </div>
+  <h2 class="intro__subtitle">front end developer</h2>
 </div>
 <div class="posts" id="allposts">
   <div class="posts--professional">
     <h3 class="posts__title">Professional work</h3>
+    <ul class="posts__list">
     {% for post in site.categories['professional'] %}
-      <a class="posts__item" href="{{ post.link }}" target="_blank">
-        <img src="/assets/img/{{ post.image }}" class="postImg" alt="{{ post.imagealt }}">
-        <div class="posts__item-details">
-          <div class="posts__item-details-inner">
-            <h4 class="posts__item-title">
-              {{ post.title }}
-            </h4>
-            <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
-            <p class="posts__item-descrip">{{ post.descrip }}</p>
-          </div>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-  <div class="posts--personal">
-    <h3 class="posts__title">Personal work</h3>
-    {% for post in site.categories['personal'] %}
-        <a class="posts__item" href="{{ post.link }}" target="_blank">
-          <img src="/assets/img/{{ post.image }}" class="postImg">
+      <li class="posts__item">
+          <img src="/assets/img/{{ post.image }}" class="postImg" alt="{{ post.imagealt }}">
           <div class="posts__item-details">
             <div class="posts__item-details-inner">
-              <h4 class="posts__item-title">
-                {{ post.title }}
-              </h4>
+              <a class="posts__link" href="{{ post.link }}" target="_blank">
+                <h4 class="posts__item-title">
+                  {{ post.title }}
+                </h4>
+              </a>
               <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
               <p class="posts__item-descrip">{{ post.descrip }}</p>
             </div>
           </div>
-        </a>
+      </li>
     {% endfor %}
+    </ul>
+  </div>
+  <div class="posts--personal">
+    <h3 class="posts__title">Personal work</h3>
+    <ul class="posts__list">
+    {% for post in site.categories['personal'] %}
+      <li class="posts__item">
+        <img src="/assets/img/{{ post.image }}" class="postImg" alt="{{ post.imagealt }}">
+        <div class="posts__item-details">
+          <div class="posts__item-details-inner">
+            <a class="posts__link" href="{{ post.link }}" target="_blank">
+              <h4 class="posts__item-title">
+                {{ post.title }}
+              </h4>
+            </a>
+            <p class="posts__item-date">{{ post.date | date: "%B %Y" }}</p>
+            <p class="posts__item-descrip">{{ post.descrip }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 </div>

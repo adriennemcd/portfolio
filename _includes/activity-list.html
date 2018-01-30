@@ -1,20 +1,22 @@
 <div class="activity">
-{% for post in site.categories[{{include.category}}] %}
-    <div class="activity-item">
-      <h4 class="activity-item-title">
-        {% if post.link == 'blank' %}
-          {{ post.title }}
-        {% else %}
-          <a class="activity-item-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+  <ul class="activity-list">
+  {% for post in site.categories[{{include.category}}] %}
+      <li class="activity-item">
+        <h4 class="activity-item-title">
+          {% if post.link == 'blank' %}
+            {{ post.title }}
+          {% else %}
+            <a class="activity-item-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+          {% endif %}
+        </h4>
+        {% if include.category == 'blog' %}
+          <p class="activity-item-date">{{ post.date | date: "%B %Y" }} - {{ post.source }}</p>
+          <p class="activity-item-descrip">{{ post.descrip }}</p>
+        {% elsif include.category == 'speak' %}
+          <p class="activity-item-date">{{ post.date | date: "%B %Y" }}</p>
+          <p class="activity-item-date">{{ post.location }}</p>
         {% endif %}
-      </h4>
-      {% if include.category == 'blog' %}
-        <p class="activity-item-date">{{ post.date | date: "%B %Y" }} - {{ post.source }}</p>
-        <p class="activity-item-descrip">{{ post.descrip }}</p>
-      {% elsif include.category == 'speak' %}
-        <p class="activity-item-date">{{ post.date | date: "%B %Y" }}</p>
-        <p class="activity-item-date">{{ post.location }}</p>
-      {% endif %}
-    </div>
-  {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>
