@@ -3,6 +3,7 @@ layout: page-2col
 title: about
 permalink: /about/
 image: /assets/img/adrienne-mcdonnell.jpg
+imagealt: "headshot of Adrienne McDonnell"
 ---
 
 ## Intro

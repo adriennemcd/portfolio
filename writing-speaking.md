@@ -3,6 +3,7 @@ layout: page-2col
 title: writing / speaking
 permalink: /writing-speaking/
 image: /assets/img/writing.jpg
+imagealt: "birdseye view of someone writing in a journal at a desk with a pair of glasses and a cup of coffee"
 ---
 
 ## Writing

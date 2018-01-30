@@ -4,6 +4,7 @@ title:  "d3 Ethnicity Graph"
 date:   2017-05-25 11:38:16 -0500
 categories: personal
 image: d3bargraph.png
+imagealt: "a bar graph showing the ratio of different race and ethnicities by neighborhood"
 descrip: "A d3.js bar graph module to explore Philly neighborhood race/ethnicity"
 link: http://adriennemcd.github.io/d3-ethnicity-graph/
 ---

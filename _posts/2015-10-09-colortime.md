@@ -4,6 +4,7 @@ title:  "Colortime!"
 date:   2015-10-09 11:38:16 -0500
 categories: personal
 image: colortime.png
+imagealt: "a color picker webpage"
 descrip: "An app for color story exploration"
 link: http://adriennemcd.github.io/colortime/ 
 ---

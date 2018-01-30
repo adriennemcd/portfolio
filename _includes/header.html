@@ -1,8 +1,7 @@
-<!-- Capture and store a URL -->
 {% capture location %} {{ page.url | split:'/' }} {% endcapture %}
 <header class="header">
   <div class="inner-container">
-    <a href="{{ site.baseurl }}/" class="header__logo"><img src="/assets/img/amcd.svg"></a>
+    <a href="{{ site.baseurl }}/" class="header__logo"><img src="/assets/img/amcd.svg" alt="AMcD logo"></a>
     <nav class="nav" role="navigation">
       <ul class="nav__list trigger">
         <li {% if location == current %} class="nav__item--current page-link" {% else %} class="nav__item page-link" {% endif %}><a href="{{ site.baseurl }}/">Home</a></li>

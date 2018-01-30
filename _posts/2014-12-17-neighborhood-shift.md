@@ -4,6 +4,7 @@ title:  "Neighborhood Shift: Flexible Indexing for Neighborhood Change Analysis"
 date:   2014-12-17 11:38:16 -0500
 categories: [personal]
 image: neighborhoodChange.png
+imagealt: "thematic map of Philadelphia"
 descrip: "Python-based tools for ArcGIS to automate the analysis of neighborhood change"
 link: https://github.com/adriennemcd/neighborhood-change-index
 ---
