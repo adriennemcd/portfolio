@@ -27,40 +27,20 @@
     width: 100%;
     border: 2px solid $theme-gray;
 
-    &--amcd, &--writing {
+    &--col, &--writing {
       display: block;
       max-width: 250px;
       margin: 7px auto 20px;
     }
   }
 
-  &__section {
-    margin-bottom: 40px;
-
-    &-title {
+  &__main-content {
+    h2 {
+      margin-top: 40px;
       line-height: 1;
-    }
-  }
 
-  &__blog, &__event {
-    &-item {
-      margin: 20px 0 25px;
-      padding-left: 10px;
-      border-left: 2px solid $theme-yellow;
-
-      &-title {
-        margin-bottom: 0;
-      }
-
-      &-date {
-        margin-top: 3px;
-        font-size: rem(14);
-        line-height: 1;
-      }
-
-      &-descrip {
-        margin: 0;
-        line-height: 1.4;
+      &:first-of-type {
+        margin-top: 0;
       }
     }
   }
@@ -81,14 +61,14 @@
     }
 
     &__img {
-      &--amcd, &--writing {
+      &--col, &--writing {
         float: left;
         max-width: 200px;
         margin: 0 30px 10px 0;
       }
     }
 
-    &__section {
+    &__main-content {
       padding-left: 230px;
     }
   }
@@ -103,12 +83,12 @@
     }
 
     &__img {
-      &--amcd, &--writing {
+      &--col, &--writing {
         max-width: 250px;
       }
     }
 
-    &__section {
+    &__main-content {
       padding-left: 280px;
     }
   }

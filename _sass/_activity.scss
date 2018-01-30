@@ -1,0 +1,22 @@
+.activity {
+  &-item {
+    margin: 20px 0 25px;
+    padding-left: 10px;
+    border-left: 2px solid $theme-yellow;
+
+    &-title {
+      margin-bottom: 0;
+    }
+
+    &-date {
+      margin-top: 3px;
+      font-size: rem(14);
+      line-height: 1;
+    }
+
+    &-descrip {
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+}

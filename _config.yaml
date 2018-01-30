@@ -19,3 +19,6 @@ permalink: /:title
 excerpt_separator: <!--more-->
 plugins:
   - octopress-autoprefixer
+kramdown:
+  # Disable auto-generated ID's for headings
+  auto_ids: false
