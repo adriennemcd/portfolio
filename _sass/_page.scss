@@ -18,7 +18,7 @@
   &__content {
     @include clearfix;
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
     background: white;
   }
 
@@ -27,7 +27,7 @@
     width: 100%;
     border: 2px solid $theme-gray;
 
-    &--col, &--writing {
+    &--col {
       display: block;
       max-width: 250px;
       margin: 7px auto 20px;
@@ -61,7 +61,7 @@
     }
 
     &__img {
-      &--col, &--writing {
+      &--col {
         float: left;
         max-width: 200px;
         margin: 0 30px 10px 0;
@@ -82,8 +82,12 @@
       }
     }
 
+    &__content {
+      padding: 70px;
+    }
+
     &__img {
-      &--col, &--writing {
+      &--col {
         max-width: 250px;
       }
     }
