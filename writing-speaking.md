@@ -1,6 +1,6 @@
 ---
 layout: page
-title: writing // speaking
+title: writing / speaking
 permalink: /writing-speaking/
 ---
 
@@ -8,7 +8,7 @@ permalink: /writing-speaking/
   <img class="page__img page__img--writing" src="/assets/img/writing.jpg">
   <div class="page__section">
     <h2 class="page__section-title">Writing</h2>
-    <p>I enjoy writing about front end technology and how to transition to the field as a career changer. Check back here for more or follow me on <a href="https://medium.com/@adriennemcd" target="_blank">Medium!</a></p>
+    <p>I enjoy writing about front end technology and how to transition to the field as a career changer. Check back here for more or follow me on <a href="https://medium.com/@adriennemcd" target="_blank">Medium.</a></p>
     <div class="page__blog">
     {% for post in site.categories['blog'] %}
         <div class="page__blog-item">
@@ -24,7 +24,7 @@ permalink: /writing-speaking/
   </div>
   <div class="page__section">
     <h2 class="page__section-title">Speaking</h2>
-    <p>I've had the wonderful opportunity to speak on a handful of panels about being a woman in tech and a career changer. It is a joy to talk to people who are just entering the field.</p>
+    <p>Once or twice a year, I speak on panels about being a woman in tech and/or a career changer. It's a great reminder of the challenges that present themselves at the beginning, and I aim to give actionable advice on how to get that first job as a developer.</p>
     <div class="page__event">
     {% for post in site.categories['speak'] %}
         <div class="page__event-item">
