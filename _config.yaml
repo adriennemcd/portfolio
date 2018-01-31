@@ -7,11 +7,12 @@
 
 # Site settings
 title: Portfolio
-email: adrienne.mcd.21@gmail.com
+email: hello@adriennemcd.com
 description: A portfolio of web development projects
 baseurl: "" # the base hostname & protocol for your site http://adriennemcd.com
 twitter_username: adrienne_mcd
 github_username:  adriennemcd
+linkedin_username: adriennemcd
 
 # Build settings
 markdown: kramdown
