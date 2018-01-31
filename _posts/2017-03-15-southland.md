@@ -4,7 +4,7 @@ title:  "Southland Park Gaming"
 date:   2017-03-15 11:38:16 -0500
 categories: professional
 image: southland.png
-imagealt: "a screenshot of the Southland website event page"
-descrip: "Front end dev for custom Sitecore website"
+imagealt: "Screenshot of the Southland website event page"
+descrip: "Lead front end developer for custom Sitecore website. The foundation for the front end of this large-scale site was a framework developed by our team. I built custom styles and components on top of this framework"
 link: https://www.southlandpark.com/
 ---

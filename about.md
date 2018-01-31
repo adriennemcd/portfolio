@@ -10,7 +10,6 @@ imagealt: "headshot of Adrienne McDonnell"
 ## Intro
 I'm Adrienne McDonnell and I'm a front end web developer based in Philadelphia. I'm a creative thinker, enthusiastic autodidact, and motivated problem-solver. In my role as front end developer, I value accessible-first development, thoughtful collaboration, and rigorous attention to detail. 
 
-## Background
 I have an academic background in geography and geospatial analysis, but have been exploring web design and web development since the days of scrolling banners and fancy rainbow text (Neopets shop theming anyone?). My transition to web development began as a desire to make GIS analysis more accessible and interactive via web mapping, and my enthusiasm for the field has grown ever since.
 
 ## Skills
