@@ -99,7 +99,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
-    color: $grey-color-dark;
+    color: $color-header;
     font-family: $font-abeezee;
     text-transform: uppercase;
     font-weight: 400;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $theme-blue-dk;
     text-decoration: none;
     transition: color ease-in-out .2s;
 
@@ -121,7 +121,7 @@ a {
     }
 
     &:hover {
-        color: lighten($brand-color, 8%);
+        color: lighten($theme-blue-dk, 8%);
     }
 }
 

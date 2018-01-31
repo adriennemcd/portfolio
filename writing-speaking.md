@@ -7,7 +7,7 @@ imagealt: "birdseye view of someone writing in a journal at a desk with a pair o
 ---
 
 ## Writing
-I enjoy writing about front end technology and how to transition to the field as a career changer. Check back here for more or follow me on <a href="https://medium.com/@adriennemcd" target="_blank">Medium.</a>
+I enjoy writing about front end technology and how to transition to the field as a career changer. Check back here for more or follow me on [Medium.](https://medium.com/@adriennemcd)
 {% include activity-list.html category="blog" %}
 
 ## Speaking

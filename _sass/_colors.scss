@@ -10,14 +10,21 @@ $grey-color-dark:  darken($grey-color, 25%);
 //NEW
 $amcd-yellow: #ffcf2c;
 $amcd-blue: #00a89e;
+$amcd-blue-dk: #208475;
 $amcd-gray: rgba(117, 137, 136, 0.6);
 $amcd-gray-lt: #e3e7e7;
 
+$outerspace: #2d3535;
+$nandor: #4c5b5a;
 $sirocco: #647574;
 
 // VARIABLES
 $theme-yellow: $amcd-yellow;
 $theme-blue: $amcd-blue;
+$theme-blue-dk: $amcd-blue-dk;
 $theme-gray: $amcd-gray;
 $theme-gray-lt: $amcd-gray-lt;
-$text-color: $sirocco;
+
+// Typography
+$color-header: $outerspace;
+$text-color: $nandor;
