@@ -1,6 +1,7 @@
 ---
 layout: page-2col
 title: writing / speaking
+excerpt: Links to Adrienne McDonnell's blog posts and events that she's spoken at
 permalink: /writing-speaking/
 image: /assets/img/writing.jpg
 imagealt: "birdseye view of someone writing in a journal at a desk with a pair of glasses and a cup of coffee"

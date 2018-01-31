@@ -1,6 +1,7 @@
 ---
 layout: page-2col
 title: about
+excerpt: About Adrienne McDonnell, front end web developer, geospatial analyst
 permalink: /about/
 image: /assets/img/adrienne-mcdonnell.jpg
 imagealt: "headshot of Adrienne McDonnell"

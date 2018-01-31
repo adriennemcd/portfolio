@@ -8,7 +8,7 @@
 # Site settings
 title: Portfolio
 email: hello@adriennemcd.com
-description: A portfolio of web development projects
+description: Adrienne McDonnell's portfolio of professional and hobby web development projects
 baseurl: "" # the base hostname & protocol for your site http://adriennemcd.com
 twitter_username: adrienne_mcd
 github_username:  adriennemcd
